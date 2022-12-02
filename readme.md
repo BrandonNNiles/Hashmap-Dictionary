@@ -83,11 +83,12 @@ The following are a set of currently implemented commands that can be executed t
 ```
 Command          Arguments                      Description
 -------          ---------                      -----------
-/delete          [Word]                         Attempts to delete a word from the hashtable.
-/help            [None]                         Displays all commands available.
-/insert          [Word Definition]              Attempts to insert a definition to a word into the hash table.
-/quit            [None]                         Ends the process.
-/search          [Word]                         Searches for a definitinon in the hash table.
+/delete          [Word]                         Attempts to delete a word from the hashtable.                           
+/help            [None]                         Displays all commands available.                                        
+/insert          [Word Definition]              Attempts to insert a definition to a word into the hash table.          
+/quit            [None]                         Ends the process.                                                       
+/search          [Word]                         Searches for a definitinon in the hash table.                           
+/test            [None]                         Runs test cases.  
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
