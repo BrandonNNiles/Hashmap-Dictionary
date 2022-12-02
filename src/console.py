@@ -8,6 +8,7 @@ Author:
 
 #Imports
 from hash import Hash
+from tests import test_hash
 
 #Classes
 class Command:
@@ -132,6 +133,7 @@ Command("delete",
 def cmd_insert(args):
     word = args[0]
     definition = args[1:]
+    definition = " ".join(definition)
 
     result = hash.insert(word, definition)
     if result == 0:
@@ -166,4 +168,15 @@ def cmd_quit():
 Command("quit",
         "Ends the process.",
         cmd_quit
+)
+
+def cmd_test():
+    print("\nRunning Tests...\n")
+    test_hash(hash)
+    print("\nTests Complete\n")
+
+
+Command("test",
+        "Runs test cases.",
+        cmd_test
 )

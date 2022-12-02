@@ -64,7 +64,6 @@ class Hash:
             return
         word_arr = to_num(word)
         definition = self.map[word_arr[0]][word_arr[1]][word_arr[2]]
-        definition = " ".join(definition)
         return definition
 
     '''
